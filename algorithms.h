@@ -1,10 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include "dictionary.c"
-#include "file.c" // binary file write & read
+#include "dictionary.h"
+#include "file.h" // binary file write & read
 //#include "list.c"
-#include "array.c" // a faster array for decompression
+#include "array.h" // a faster array for decompression
 
 enum {
     dictionarySize = 4095, // maximum number of entries defined for the dictionary (2^12 = 4096)

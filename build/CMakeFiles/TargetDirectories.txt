@@ -1,0 +1,3 @@
+/home/henry/LZW/build/CMakeFiles/rebuild_cache.dir
+/home/henry/LZW/build/CMakeFiles/edit_cache.dir
+/home/henry/LZW/build/CMakeFiles/main.dir

@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/henry/LZW/LZW_COPY/Algorithms.cxx
+./Algorithms.hxx
+/home/henry/LZW/LZW_COPY/Algorithms.hxx
+
+/home/henry/LZW/LZW_COPY/Algorithms.hxx
+fstream
+-
+
+/home/henry/LZW/LZW_COPY/Lzw.cxx
+cstring
+-
+cstdio
+-
+./Algorithms.hxx
+/home/henry/LZW/LZW_COPY/Algorithms.hxx
+

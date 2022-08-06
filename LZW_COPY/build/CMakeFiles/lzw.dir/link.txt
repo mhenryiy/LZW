@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/lzw.dir/Algorithms.cxx.o CMakeFiles/lzw.dir/Lzw.cxx.o  -o lzw 

@@ -1,0 +1,44 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/henry/LZW/algorithms.h
+stdio.h
+-
+stdlib.h
+-
+string.h
+-
+dictionary.h
+/home/henry/LZW/dictionary.h
+file.h
+/home/henry/LZW/file.h
+array.h
+/home/henry/LZW/array.h
+
+/home/henry/LZW/array.h
+
+/home/henry/LZW/dictionary.h
+stdio.h
+-
+stdlib.h
+-
+
+/home/henry/LZW/file.h
+stdio.h
+-
+
+/home/henry/LZW/lzw.cxx
+stdio.h
+-
+stdlib.h
+-
+string.h
+-
+algorithms.h
+/home/henry/LZW/algorithms.h
+

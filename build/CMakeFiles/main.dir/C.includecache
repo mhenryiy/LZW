@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/henry/LZW/array.c
+
+/home/henry/LZW/dictionary.c
+stdio.h
+-
+stdlib.h
+-
+
+/home/henry/LZW/file.c
+stdio.h
+-
+
