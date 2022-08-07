@@ -6,10 +6,6 @@
 
 #IncludeRegexTransform: 
 
-/home/henry/LZW/LZW_COPY/Algorithms.cxx
-./Algorithms.hxx
-/home/henry/LZW/LZW_COPY/Algorithms.hxx
-
 /home/henry/LZW/LZW_COPY/Algorithms.hxx
 fstream
 -
@@ -21,4 +17,10 @@ cstdio
 -
 ./Algorithms.hxx
 /home/henry/LZW/LZW_COPY/Algorithms.hxx
+../file.h
+/home/henry/LZW/file.h
+
+/home/henry/LZW/file.h
+stdio.h
+-
 

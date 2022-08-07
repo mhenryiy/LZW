@@ -2,11 +2,13 @@
 #define ALGORITHM_H
 
 #include <fstream>
+#define DICTIONARY_MAX_SIZE 1024
 
 namespace LZW_COPY
 {
     typedef struct Algorithms
     {
+        char * dictionany[DICTIONARY_MAX_SIZE];
 
     } LZWData;
 

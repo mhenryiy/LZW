@@ -1,6 +1,7 @@
 #include <cstring>
 #include <cstdio>
 #include "./Algorithms.hxx"
+#include "../file.h"
 
 int main(int argc, char **argv)
 {
@@ -22,6 +23,23 @@ int main(int argc, char **argv)
         printf("%s\n", errMsg);
         printf("%s\n", hint);
     }
+    /*
+    outputFile = fopen("writeBinarytestfile", "wb");
+    const char *test = "ab";
+    for (int i = 0; i < strlen(test); i++)
+    {
+        writeBinary(outputFile, test[i]);
+        printf("char %c\n", test[i]);
+    }
 
+    fclose(outputFile);
+
+    FILE *output = fopen("writeBinarytestfile", "r");
+    char read;
+    while ((read = fgetc(output)) != EOF)
+    {
+        printf("%2x\n", read);
+    }
+    */
     return 0;
 }

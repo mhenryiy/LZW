@@ -6,4 +6,5 @@ CMakeFiles/lzw.dir/Algorithms.cxx.o: ../Algorithms.hxx
 
 CMakeFiles/lzw.dir/Lzw.cxx.o: ../Algorithms.hxx
 CMakeFiles/lzw.dir/Lzw.cxx.o: ../Lzw.cxx
+CMakeFiles/lzw.dir/Lzw.cxx.o: /home/henry/LZW/file.h
 
