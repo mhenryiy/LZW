@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/home/henry/LZW/build",
+  "command": "/usr/bin/g++    -g   -o CMakeFiles/main.dir/lzw.cxx.o -c /home/henry/LZW/lzw.cxx",
+  "file": "/home/henry/LZW/lzw.cxx"
+}
+]
