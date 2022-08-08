@@ -54,18 +54,38 @@ CMAKE_BINARY_DIR = /home/henry/LZW/LZW_COPY/build
 
 # The main recursive "all" target.
 all: CMakeFiles/lzw.dir/all
+all: test/all
 
 .PHONY : all
 
 # The main recursive "preinstall" target.
-preinstall:
+preinstall: test/preinstall
 
 .PHONY : preinstall
 
 # The main recursive "clean" target.
 clean: CMakeFiles/lzw.dir/clean
+clean: test/clean
 
 .PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory test
+
+# Recursive "all" directory target.
+test/all: test/CMakeFiles/LZWTest.dir/all
+
+.PHONY : test/all
+
+# Recursive "preinstall" directory target.
+test/preinstall:
+
+.PHONY : test/preinstall
+
+# Recursive "clean" directory target.
+test/clean: test/CMakeFiles/LZWTest.dir/clean
+
+.PHONY : test/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/lzw.dir
@@ -74,7 +94,7 @@ clean: CMakeFiles/lzw.dir/clean
 CMakeFiles/lzw.dir/all:
 	$(MAKE) -f CMakeFiles/lzw.dir/build.make CMakeFiles/lzw.dir/depend
 	$(MAKE) -f CMakeFiles/lzw.dir/build.make CMakeFiles/lzw.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/henry/LZW/LZW_COPY/build/CMakeFiles --progress-num=1,2,3 "Built target lzw"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/henry/LZW/LZW_COPY/build/CMakeFiles --progress-num=3,4,5 "Built target lzw"
 .PHONY : CMakeFiles/lzw.dir/all
 
 # Build rule for subdir invocation for target.
@@ -93,6 +113,33 @@ lzw: CMakeFiles/lzw.dir/rule
 CMakeFiles/lzw.dir/clean:
 	$(MAKE) -f CMakeFiles/lzw.dir/build.make CMakeFiles/lzw.dir/clean
 .PHONY : CMakeFiles/lzw.dir/clean
+
+#=============================================================================
+# Target rules for target test/CMakeFiles/LZWTest.dir
+
+# All Build rule for target.
+test/CMakeFiles/LZWTest.dir/all:
+	$(MAKE) -f test/CMakeFiles/LZWTest.dir/build.make test/CMakeFiles/LZWTest.dir/depend
+	$(MAKE) -f test/CMakeFiles/LZWTest.dir/build.make test/CMakeFiles/LZWTest.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/henry/LZW/LZW_COPY/build/CMakeFiles --progress-num=1,2 "Built target LZWTest"
+.PHONY : test/CMakeFiles/LZWTest.dir/all
+
+# Build rule for subdir invocation for target.
+test/CMakeFiles/LZWTest.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/henry/LZW/LZW_COPY/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/LZWTest.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/henry/LZW/LZW_COPY/build/CMakeFiles 0
+.PHONY : test/CMakeFiles/LZWTest.dir/rule
+
+# Convenience name for target.
+LZWTest: test/CMakeFiles/LZWTest.dir/rule
+
+.PHONY : LZWTest
+
+# clean rule for target.
+test/CMakeFiles/LZWTest.dir/clean:
+	$(MAKE) -f test/CMakeFiles/LZWTest.dir/build.make test/CMakeFiles/LZWTest.dir/clean
+.PHONY : test/CMakeFiles/LZWTest.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

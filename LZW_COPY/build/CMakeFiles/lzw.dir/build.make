@@ -57,42 +57,42 @@ include CMakeFiles/lzw.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/lzw.dir/flags.make
 
-CMakeFiles/lzw.dir/Algorithms.cxx.o: CMakeFiles/lzw.dir/flags.make
-CMakeFiles/lzw.dir/Algorithms.cxx.o: ../Algorithms.cxx
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/henry/LZW/LZW_COPY/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/lzw.dir/Algorithms.cxx.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/lzw.dir/Algorithms.cxx.o -c /home/henry/LZW/LZW_COPY/Algorithms.cxx
+CMakeFiles/lzw.dir/src/Algorithms.cxx.o: CMakeFiles/lzw.dir/flags.make
+CMakeFiles/lzw.dir/src/Algorithms.cxx.o: ../src/Algorithms.cxx
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/henry/LZW/LZW_COPY/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/lzw.dir/src/Algorithms.cxx.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/lzw.dir/src/Algorithms.cxx.o -c /home/henry/LZW/LZW_COPY/src/Algorithms.cxx
 
-CMakeFiles/lzw.dir/Algorithms.cxx.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/lzw.dir/Algorithms.cxx.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/henry/LZW/LZW_COPY/Algorithms.cxx > CMakeFiles/lzw.dir/Algorithms.cxx.i
+CMakeFiles/lzw.dir/src/Algorithms.cxx.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/lzw.dir/src/Algorithms.cxx.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/henry/LZW/LZW_COPY/src/Algorithms.cxx > CMakeFiles/lzw.dir/src/Algorithms.cxx.i
 
-CMakeFiles/lzw.dir/Algorithms.cxx.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lzw.dir/Algorithms.cxx.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/henry/LZW/LZW_COPY/Algorithms.cxx -o CMakeFiles/lzw.dir/Algorithms.cxx.s
+CMakeFiles/lzw.dir/src/Algorithms.cxx.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lzw.dir/src/Algorithms.cxx.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/henry/LZW/LZW_COPY/src/Algorithms.cxx -o CMakeFiles/lzw.dir/src/Algorithms.cxx.s
 
-CMakeFiles/lzw.dir/Lzw.cxx.o: CMakeFiles/lzw.dir/flags.make
-CMakeFiles/lzw.dir/Lzw.cxx.o: ../Lzw.cxx
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/henry/LZW/LZW_COPY/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/lzw.dir/Lzw.cxx.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/lzw.dir/Lzw.cxx.o -c /home/henry/LZW/LZW_COPY/Lzw.cxx
+CMakeFiles/lzw.dir/src/Lzw.cxx.o: CMakeFiles/lzw.dir/flags.make
+CMakeFiles/lzw.dir/src/Lzw.cxx.o: ../src/Lzw.cxx
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/henry/LZW/LZW_COPY/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/lzw.dir/src/Lzw.cxx.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/lzw.dir/src/Lzw.cxx.o -c /home/henry/LZW/LZW_COPY/src/Lzw.cxx
 
-CMakeFiles/lzw.dir/Lzw.cxx.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/lzw.dir/Lzw.cxx.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/henry/LZW/LZW_COPY/Lzw.cxx > CMakeFiles/lzw.dir/Lzw.cxx.i
+CMakeFiles/lzw.dir/src/Lzw.cxx.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/lzw.dir/src/Lzw.cxx.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/henry/LZW/LZW_COPY/src/Lzw.cxx > CMakeFiles/lzw.dir/src/Lzw.cxx.i
 
-CMakeFiles/lzw.dir/Lzw.cxx.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lzw.dir/Lzw.cxx.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/henry/LZW/LZW_COPY/Lzw.cxx -o CMakeFiles/lzw.dir/Lzw.cxx.s
+CMakeFiles/lzw.dir/src/Lzw.cxx.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lzw.dir/src/Lzw.cxx.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/henry/LZW/LZW_COPY/src/Lzw.cxx -o CMakeFiles/lzw.dir/src/Lzw.cxx.s
 
 # Object files for target lzw
 lzw_OBJECTS = \
-"CMakeFiles/lzw.dir/Algorithms.cxx.o" \
-"CMakeFiles/lzw.dir/Lzw.cxx.o"
+"CMakeFiles/lzw.dir/src/Algorithms.cxx.o" \
+"CMakeFiles/lzw.dir/src/Lzw.cxx.o"
 
 # External object files for target lzw
 lzw_EXTERNAL_OBJECTS =
 
-lzw: CMakeFiles/lzw.dir/Algorithms.cxx.o
-lzw: CMakeFiles/lzw.dir/Lzw.cxx.o
+lzw: CMakeFiles/lzw.dir/src/Algorithms.cxx.o
+lzw: CMakeFiles/lzw.dir/src/Lzw.cxx.o
 lzw: CMakeFiles/lzw.dir/build.make
 lzw: CMakeFiles/lzw.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/henry/LZW/LZW_COPY/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable lzw"

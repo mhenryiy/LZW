@@ -1,7 +1,7 @@
 #include <cstring>
 #include <cstdio>
 #include "./Algorithms.hxx"
-#include "../file.h"
+#include "./FileControl.hxx"
 
 int main(int argc, char **argv)
 {

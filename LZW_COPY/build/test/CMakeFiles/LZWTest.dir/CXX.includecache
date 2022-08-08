@@ -14,13 +14,11 @@ fstream
 cstdio
 -
 
-/home/henry/LZW/LZW_COPY/src/Lzw.cxx
-cstring
+/home/henry/LZW/LZW_COPY/test/LZWTest.cxx
+gtest/gtest.h
 -
-cstdio
--
-./Algorithms.hxx
+../src/Algorithms.hxx
 /home/henry/LZW/LZW_COPY/src/Algorithms.hxx
-./FileControl.hxx
+../src/FileControl.hxx
 /home/henry/LZW/LZW_COPY/src/FileControl.hxx
 

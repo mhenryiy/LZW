@@ -56,17 +56,6 @@ CMAKE_BINARY_DIR = /home/henry/LZW/LZW_COPY/build
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
-	/usr/bin/ccmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : edit_cache
-
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
-
-.PHONY : edit_cache/fast
-
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
@@ -78,16 +67,27 @@ rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
 
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
+	/usr/bin/ccmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : edit_cache
+
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
+
+.PHONY : edit_cache/fast
+
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/henry/LZW/LZW_COPY/build/CMakeFiles /home/henry/LZW/LZW_COPY/build/CMakeFiles/progress.marks
-	$(MAKE) -f CMakeFiles/Makefile2 all
+	cd /home/henry/LZW/LZW_COPY/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/henry/LZW/LZW_COPY/build/CMakeFiles /home/henry/LZW/LZW_COPY/build/test/CMakeFiles/progress.marks
+	cd /home/henry/LZW/LZW_COPY/build && $(MAKE) -f CMakeFiles/Makefile2 test/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/henry/LZW/LZW_COPY/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	$(MAKE) -f CMakeFiles/Makefile2 clean
+	cd /home/henry/LZW/LZW_COPY/build && $(MAKE) -f CMakeFiles/Makefile2 test/clean
 .PHONY : clean
 
 # The main clean target
@@ -97,98 +97,60 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	$(MAKE) -f CMakeFiles/Makefile2 preinstall
+	cd /home/henry/LZW/LZW_COPY/build && $(MAKE) -f CMakeFiles/Makefile2 test/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	$(MAKE) -f CMakeFiles/Makefile2 preinstall
+	cd /home/henry/LZW/LZW_COPY/build && $(MAKE) -f CMakeFiles/Makefile2 test/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/henry/LZW/LZW_COPY/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
-#=============================================================================
-# Target rules for targets named lzw
+# Convenience name for target.
+test/CMakeFiles/LZWTest.dir/rule:
+	cd /home/henry/LZW/LZW_COPY/build && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/LZWTest.dir/rule
+.PHONY : test/CMakeFiles/LZWTest.dir/rule
 
-# Build rule for target.
-lzw: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 lzw
-.PHONY : lzw
+# Convenience name for target.
+LZWTest: test/CMakeFiles/LZWTest.dir/rule
 
-# fast build rule for target.
-lzw/fast:
-	$(MAKE) -f CMakeFiles/lzw.dir/build.make CMakeFiles/lzw.dir/build
-.PHONY : lzw/fast
-
-#=============================================================================
-# Target rules for targets named LZWTest
-
-# Build rule for target.
-LZWTest: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 LZWTest
 .PHONY : LZWTest
 
 # fast build rule for target.
 LZWTest/fast:
-	$(MAKE) -f test/CMakeFiles/LZWTest.dir/build.make test/CMakeFiles/LZWTest.dir/build
+	cd /home/henry/LZW/LZW_COPY/build && $(MAKE) -f test/CMakeFiles/LZWTest.dir/build.make test/CMakeFiles/LZWTest.dir/build
 .PHONY : LZWTest/fast
 
-src/Algorithms.o: src/Algorithms.cxx.o
+LZWTest.o: LZWTest.cxx.o
 
-.PHONY : src/Algorithms.o
-
-# target to build an object file
-src/Algorithms.cxx.o:
-	$(MAKE) -f CMakeFiles/lzw.dir/build.make CMakeFiles/lzw.dir/src/Algorithms.cxx.o
-.PHONY : src/Algorithms.cxx.o
-
-src/Algorithms.i: src/Algorithms.cxx.i
-
-.PHONY : src/Algorithms.i
-
-# target to preprocess a source file
-src/Algorithms.cxx.i:
-	$(MAKE) -f CMakeFiles/lzw.dir/build.make CMakeFiles/lzw.dir/src/Algorithms.cxx.i
-.PHONY : src/Algorithms.cxx.i
-
-src/Algorithms.s: src/Algorithms.cxx.s
-
-.PHONY : src/Algorithms.s
-
-# target to generate assembly for a file
-src/Algorithms.cxx.s:
-	$(MAKE) -f CMakeFiles/lzw.dir/build.make CMakeFiles/lzw.dir/src/Algorithms.cxx.s
-.PHONY : src/Algorithms.cxx.s
-
-src/Lzw.o: src/Lzw.cxx.o
-
-.PHONY : src/Lzw.o
+.PHONY : LZWTest.o
 
 # target to build an object file
-src/Lzw.cxx.o:
-	$(MAKE) -f CMakeFiles/lzw.dir/build.make CMakeFiles/lzw.dir/src/Lzw.cxx.o
-.PHONY : src/Lzw.cxx.o
+LZWTest.cxx.o:
+	cd /home/henry/LZW/LZW_COPY/build && $(MAKE) -f test/CMakeFiles/LZWTest.dir/build.make test/CMakeFiles/LZWTest.dir/LZWTest.cxx.o
+.PHONY : LZWTest.cxx.o
 
-src/Lzw.i: src/Lzw.cxx.i
+LZWTest.i: LZWTest.cxx.i
 
-.PHONY : src/Lzw.i
+.PHONY : LZWTest.i
 
 # target to preprocess a source file
-src/Lzw.cxx.i:
-	$(MAKE) -f CMakeFiles/lzw.dir/build.make CMakeFiles/lzw.dir/src/Lzw.cxx.i
-.PHONY : src/Lzw.cxx.i
+LZWTest.cxx.i:
+	cd /home/henry/LZW/LZW_COPY/build && $(MAKE) -f test/CMakeFiles/LZWTest.dir/build.make test/CMakeFiles/LZWTest.dir/LZWTest.cxx.i
+.PHONY : LZWTest.cxx.i
 
-src/Lzw.s: src/Lzw.cxx.s
+LZWTest.s: LZWTest.cxx.s
 
-.PHONY : src/Lzw.s
+.PHONY : LZWTest.s
 
 # target to generate assembly for a file
-src/Lzw.cxx.s:
-	$(MAKE) -f CMakeFiles/lzw.dir/build.make CMakeFiles/lzw.dir/src/Lzw.cxx.s
-.PHONY : src/Lzw.cxx.s
+LZWTest.cxx.s:
+	cd /home/henry/LZW/LZW_COPY/build && $(MAKE) -f test/CMakeFiles/LZWTest.dir/build.make test/CMakeFiles/LZWTest.dir/LZWTest.cxx.s
+.PHONY : LZWTest.cxx.s
 
 # Help Target
 help:
@@ -196,16 +158,12 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... lzw"
+	@echo "... edit_cache"
 	@echo "... LZWTest"
-	@echo "... src/Algorithms.o"
-	@echo "... src/Algorithms.i"
-	@echo "... src/Algorithms.s"
-	@echo "... src/Lzw.o"
-	@echo "... src/Lzw.i"
-	@echo "... src/Lzw.s"
+	@echo "... LZWTest.o"
+	@echo "... LZWTest.i"
+	@echo "... LZWTest.s"
 .PHONY : help
 
 
@@ -217,6 +175,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/henry/LZW/LZW_COPY/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

@@ -1,3 +1,6 @@
 /home/henry/LZW/LZW_COPY/build/CMakeFiles/edit_cache.dir
 /home/henry/LZW/LZW_COPY/build/CMakeFiles/rebuild_cache.dir
 /home/henry/LZW/LZW_COPY/build/CMakeFiles/lzw.dir
+/home/henry/LZW/LZW_COPY/build/test/CMakeFiles/rebuild_cache.dir
+/home/henry/LZW/LZW_COPY/build/test/CMakeFiles/edit_cache.dir
+/home/henry/LZW/LZW_COPY/build/test/CMakeFiles/LZWTest.dir

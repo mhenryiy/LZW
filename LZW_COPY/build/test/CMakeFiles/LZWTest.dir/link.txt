@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/LZWTest.dir/LZWTest.cxx.o  -o LZWTest  -lgtest -lgtest_main -lpthread 

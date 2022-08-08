@@ -1,0 +1,5 @@
+if(EXISTS "/home/henry/LZW/LZW_COPY/build/test/LZWTest[1]_tests.cmake")
+  include("/home/henry/LZW/LZW_COPY/build/test/LZWTest[1]_tests.cmake")
+else()
+  add_test(LZWTest_NOT_BUILT LZWTest_NOT_BUILT)
+endif()

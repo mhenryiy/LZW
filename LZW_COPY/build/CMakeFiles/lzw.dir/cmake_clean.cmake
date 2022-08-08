@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/lzw.dir/Algorithms.cxx.o"
-  "CMakeFiles/lzw.dir/Lzw.cxx.o"
+  "CMakeFiles/lzw.dir/src/Algorithms.cxx.o"
+  "CMakeFiles/lzw.dir/src/Lzw.cxx.o"
   "lzw"
   "lzw.pdb"
 )
